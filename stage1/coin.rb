@@ -5,6 +5,10 @@ BALANCES = {
   'tim' => 1_000_000,
 }
 
+PASSWORDS = {
+  'tim' => 'strand-ponoudi'
+}
+
 get "/balance" do
   user = params['user'].downcase
   puts BALANCES.to_s.yellow
